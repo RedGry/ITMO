@@ -7,4 +7,4 @@
 Описание варианта.pdf  
   
 **Диаграмма LAB_5:**  
-![alt-текст](https://i.ibb.co/wcMG7YQ/Lab5-UML.png "2630")  
+![alt-текст](https://i.ibb.co/wcMG7YQ/Lab5-UML.png "1125")  
