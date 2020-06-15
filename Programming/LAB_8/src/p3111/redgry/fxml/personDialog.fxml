@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p3111.redgry.utils.controllers.PersonDialogController">
+   <children>
+      <Label fx:id="parameters_person" layoutX="31.0" layoutY="8.0" prefHeight="37.0" prefWidth="341.0" text="Введите параметры Person" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Demi ITC" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.3904761904761905">
+               <stops>
+                  <Stop color="#9a1313" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutY="51.0" prefHeight="600.0" prefWidth="402.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Separator prefHeight="2.0" prefWidth="402.0" />
+            <Label layoutX="183.0" layoutY="20.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" layoutX="126.0" layoutY="41.0" />
+            <Label layoutX="56.0" layoutY="77.0" text="Cooridanate (X)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="coordinateXField" layoutX="33.0" layoutY="100.0" />
+            <Label layoutX="247.0" layoutY="77.0" text="Coordinate (Y)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="coordinateYField" layoutX="220.0" layoutY="100.0" />
+            <Label layoutX="178.0" layoutY="134.0" text="Height" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="heightField" layoutX="126.0" layoutY="155.0" />
+            <Label layoutX="122.0" layoutY="187.0" text="Birthday (YYYY-MM-DD)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="birthdayField" layoutX="127.0" layoutY="208.0" />
+            <Label layoutX="163.0" layoutY="233.0" text="passport ID" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passportIdField" layoutX="127.0" layoutY="254.0" />
+            <Label layoutX="167.0" layoutY="279.0" text="Hair Color" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="hairColorBox" layoutX="126.0" layoutY="300.0" prefWidth="150.0" />
+            <Label layoutX="150.0" layoutY="333.0" text="Location Name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="locationNameField" layoutX="127.0" layoutY="354.0" />
+            <Label layoutX="31.0" layoutY="390.0" text="Location (X)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="locationXField" layoutX="25.0" layoutY="411.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="164.0" layoutY="390.0" text="Location (Y)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="locationYField" layoutX="157.0" layoutY="411.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="298.0" layoutY="390.0" text="Location (Z)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="locationZField" layoutX="292.0" layoutY="411.0" prefHeight="25.0" prefWidth="90.0" />
+            <Button layoutX="131.0" layoutY="501.0" mnemonicParsing="false" onAction="#CancelClick" text="Cancel" />
+            <Button layoutX="221.0" layoutY="501.0" mnemonicParsing="false" onAction="#OKClick" prefHeight="25.0" prefWidth="52.0" text="Ok" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

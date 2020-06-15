@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p3111.redgry.utils.controllers.MainController">
+   <children>
+      <BorderPane layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar layoutY="-11.0" prefHeight="25.0" prefWidth="590.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <menus>
+                      <Menu fx:id="menuFile" mnemonicParsing="false" text="Файл">
+                        <items>
+                          <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="Закрыть" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="menuHelp" mnemonicParsing="false" text="Помощь">
+                        <items>
+                          <MenuItem fx:id="help" mnemonicParsing="false" onAction="#help" text="Информация о командах" />
+                              <MenuItem fx:id="info" mnemonicParsing="false" onAction="#info" text="Информация о коллекции" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="selectLanguage" mnemonicParsing="false" text="Выбраться Язык">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#switchRussian" text="Русский" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchTurkish" text="Türkçe" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchUkrainian" text="Український" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchSpanish" text="Español" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ToolBar layoutY="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <items>
+                        <Label fx:id="usernameLabel" text="Пользователь:" />
+                        <Separator orientation="VERTICAL" prefHeight="15.0" prefWidth="2.0" />
+                        <Label fx:id="updateTableLable" text="Обновить значения таблицы:" />
+                        <Button mnemonicParsing="false" onAction="#updateTableClick" prefHeight="19.0" prefWidth="40.0" text="OK">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Button>
+                     </items>
+                  </ToolBar>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <VBox prefHeight="446.0" prefWidth="205.0" style="-fx-background-color: #afaf;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="addCmdLabel" text="Команды Добавления:" />
+                  <Button fx:id="insert" mnemonicParsing="false" onAction="#insertClick" prefHeight="25.0" prefWidth="230.0" text="Добавить Персонажа">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="removeCmdLabel" text="Команды Удаления:" />
+                  <Button fx:id="remove_key" mnemonicParsing="false" onAction="#removeByKeyClick" prefHeight="25.0" prefWidth="230.0" text="Удалить по ID">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="remove_any_by_birthday" mnemonicParsing="false" onAction="#removeByBirthdayClick" prefHeight="25.0" prefWidth="230.0" text="Удалить по Дню Рождения">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="remove_greater" mnemonicParsing="false" onAction="#removeGreaterClick" prefHeight="25.0" prefWidth="230.0" text="Удалить больших Персонажа">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="remove_greater_key" mnemonicParsing="false" onAction="#removeGreaterKeyClick" prefHeight="25.0" prefWidth="230.0" text="Удалить больших ID">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="clear" mnemonicParsing="false" onAction="#clearClick" prefHeight="25.0" prefWidth="230.0" text="Очистить">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="updateCmdLabel" text="Команды Обновления:" />
+                  <Button fx:id="update" mnemonicParsing="false" onAction="#updateClick" prefHeight="25.0" prefWidth="230.0" text="Обновить">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="printCmdLabel" text="Команды Вывода:" />
+                  <Button fx:id="count_less_then_location" mnemonicParsing="false" onAction="#CountLessThanLocationClick" prefHeight="25.0" prefWidth="230.0" text="Вывести кол-во &lt;V Локации">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="print_ascending" mnemonicParsing="false" onAction="#printAscendingClick" prefHeight="25.0" prefWidth="230.0" text="ID Песонажей по возрастанию">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="history" mnemonicParsing="false" onAction="#historyClick" prefHeight="25.0" prefWidth="230.0" text="История команд">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab fx:id="tabPerson" text="Таблица Person">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                           <children>
+                              <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox prefHeight="16.0" prefWidth="495.0">
+                                       <children>
+                                          <TextField fx:id="idField" prefHeight="14.0" prefWidth="75.0" promptText="ID">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="nameField" prefHeight="14.0" prefWidth="75.0" promptText="name">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="cordXField" prefHeight="19.0" prefWidth="98.0" promptText="Coordinate (X)">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="cordYField" prefHeight="19.0" prefWidth="93.0" promptText="Coordinate (Y)">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="birthdayField" prefHeight="14.0" prefWidth="75.0" promptText="Birthday">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="heightField" prefHeight="14.0" prefWidth="75.0" promptText="Height">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="passportIdField" prefHeight="14.0" prefWidth="75.0" promptText="passportID">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="hairColorField" prefHeight="14.0" prefWidth="76.0" promptText="hairColor">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="locNameField" prefHeight="14.0" prefWidth="100.0" promptText="Location Name">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="locXField" prefHeight="14.0" prefWidth="75.0" promptText="Location (X)">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="locYField" prefHeight="14.0" prefWidth="75.0" promptText="Location (Y)">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="locZField" prefHeight="14.0" prefWidth="75.0" promptText="Location (Z)">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="userField" prefHeight="14.0" prefWidth="75.0" promptText="user">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <TableView fx:id="dbTable" prefHeight="5000.0">
+                                      <columns>
+                                        <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="nameColumn" prefWidth="75.0" text="name" />
+                                          <TableColumn fx:id="coordXColumn" prefWidth="98.0" text="Coordinate (X)" />
+                                          <TableColumn fx:id="coordYColumn" prefWidth="93.0" text="Coordinate (Y)" />
+                                          <TableColumn fx:id="birthdayColumn" prefWidth="75.0" text="Birthday" />
+                                          <TableColumn fx:id="heightColumn" prefWidth="75.0" text="Height" />
+                                          <TableColumn fx:id="passportIdColumn" prefWidth="75.0" text="passportID" />
+                                          <TableColumn fx:id="hairColorColumn" prefWidth="75.0" text="hairColor" />
+                                          <TableColumn fx:id="locNameColumn" prefWidth="100.0" text="Location Name" />
+                                          <TableColumn fx:id="locXColumn" prefWidth="75.0" text="Location (X)" />
+                                          <TableColumn fx:id="locYColumn" prefWidth="75.0" text="Location (Y)" />
+                                          <TableColumn fx:id="locZColumn" prefWidth="75.0" text="Location(Z)" />
+                                          <TableColumn fx:id="userColumn" prefWidth="75.0" text="user" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabVisual" onSelectionChanged="#visualisatonSelect" text="Область визуализации">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane fx:id="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

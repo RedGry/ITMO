@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p3111.redgry.utils.controllers.AuthorizationController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="selecteLanguage" mnemonicParsing="false" text="Language">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#switchRussian" text="Русский" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchTurkish" text="Türkçe" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchUkrainian" text="Український" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchSpanish" text="Español" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="164.0" layoutY="25.0" text="RedGry Project" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="71.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <TextField fx:id="login" layoutX="171.0" layoutY="106.0" prefHeight="35.0" prefWidth="260.0" promptText="login" />
+            <PasswordField fx:id="password" layoutX="171.0" layoutY="165.0" prefHeight="35.0" prefWidth="260.0" promptText="password" />
+            <Label fx:id="registrationLogin" layoutX="22.0" layoutY="35.0" prefHeight="46.0" prefWidth="564.0" text="registration / login" textAlignment="CENTER" textFill="#ab0c0c" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="logining" layoutX="171.0" layoutY="226.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="25.0" prefWidth="107.0" text="login" />
+            <Button fx:id="registration" layoutX="324.0" layoutY="226.0" mnemonicParsing="false" onAction="#registrationClick" prefHeight="25.0" prefWidth="107.0" text="registration" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
