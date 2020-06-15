@@ -7,4 +7,4 @@
 Описание варианта.pdf  
   
 **Диаграмма LAB_7:**  
-![alt-текст](https://i.ibb.co/5xvQR0L/image.png "1199")  
+![alt-текст](https://ibb.co/WPh6Fzt "1199")  
