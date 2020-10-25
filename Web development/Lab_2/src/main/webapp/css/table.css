@@ -1,0 +1,34 @@
+/*
+    Старое из лабы 1, может не работать в новой
+ */
+
+.table-check{
+    color: white;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.table-header th {
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.table-row  td {
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.table-row:nth-of-type(odd){
+    margin: 0;
+    background-color: #1f1f1f;
+}
+
+.container-table{
+    margin: 30px auto 100px auto;
+    padding: 20px 10px 10px 5px;
+    display: table;
+    text-align: center;
+}

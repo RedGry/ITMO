@@ -1,0 +1,91 @@
+.container{
+    margin: 30px auto auto;
+    background-color: ghostwhite;
+    padding: 20px;
+    display: table;
+    text-align: center;
+    box-shadow: 0 0 10px 1px black;
+}
+
+/*
+    Отвечает за график (левая часть контейнера)
+*/
+.svg-wrapper{
+    background-color: white;
+    border: 2px solid aqua;
+    box-shadow: 0 0 5px 0 aqua;
+    border-radius: 20%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/*
+    Ввод данных (Правая часть)
+*/
+.inputs{
+    background-color: pink;
+    padding: 1px 50px 15px 50px;
+    border-radius: 5%;
+}
+
+.text-center{
+    margin: auto 30px;
+    display: inline-block;
+}
+
+.text-center-button{
+    display: inline-block;
+}
+
+.text-input{
+    text-align: center;
+}
+
+/*
+    Для кнопки выбора X и R
+*/
+
+
+.button-input{
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: lightyellow;
+}
+
+.button-input:hover{
+    color: white;
+    transition: 0.5s;
+    border: 1px solid red;
+    background-color: forestgreen;
+}
+
+.button-input-selected{
+    width: 40px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: green;
+}
+
+
+/*
+    Для кнопок отправки и очистки таблицы
+*/
+.special-button button{
+    color: white;
+    margin: 20px 5px 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.special-button button:hover{
+    color: black;
+    transition: 0.5s;
+    border: 2px solid red;
+    background-color: ghostwhite;
+}

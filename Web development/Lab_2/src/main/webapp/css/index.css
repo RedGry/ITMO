@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno&display=swap");
+
+*{
+    font-family: "MuseoModerno", cursive;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
