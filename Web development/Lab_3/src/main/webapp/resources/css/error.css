@@ -1,0 +1,11 @@
+#error{
+    color: #cf180c;
+    font-size: 50px;
+    margin: 30px 5% 30px 5%;
+}
+
+.text-error{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}

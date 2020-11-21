@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Главная страница</title>
+    <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
+    <link rel="shortcut icon" href="#{resource['img/redgry.png']}" target="head"/>
+    <h:outputStylesheet library="css" name="header.css" target="head"/>
+    <h:outputStylesheet library="css" name="main.css" target="head"/>
+    <h:outputStylesheet library="css" name="clock.css" target="head"/>
+    <h:outputStylesheet library="css" name="table.css" target="head"/>
+</h:head>
+
+<h:body>
+    <div class="header">
+        <ui:include src="templates/header.xhtml"/>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="graph">
+                        <div class="svg-wrapper">
+                            <ui:include src="templates/graph.html"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h:form id="hiddenForm" style="display: none">
+                        <h:inputText styleClass="pointX" value="#{dotsBean.dotFromSVG.x}" />
+                        <h:inputText styleClass="pointY" value="#{dotsBean.dotFromSVG.y}" />
+                        <h:inputText styleClass="pointR" value="#{dotsBean.dotFromSVG.r}" />
+                        <h:inputHidden type="hidden" id="isFromGraphic" />
+                        <h:commandButton styleClass="submitSvg" action="#{dotsBean.addDotFromSvg}">
+                            <f:ajax execute="hiddenForm" render="valuesTable"/>
+                        </h:commandButton>
+                    </h:form>
+
+                    <h:form id="newEntryForm">
+                        <div class="inputs">
+                            <p>
+                                <h:outputLabel for="R_field" value="Выберите R:"/>
+                            </p>
+                            <div class="row">
+                                <div class="text-center-button">
+                                    <div class="text-center">
+                                        <p:spinner id="R_field"
+                                                   name="r"
+                                                   value="#{dotsBean.dotForExecution.r}"
+                                                   required="true"
+                                                   min="0.1"
+                                                   max="3"
+                                                   type="number"
+                                                   stepFactor="0.1"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Выберите Х:</p>
+                            <div class="row">
+                                <div class="text-center">
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="-5" name="x" />
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="-4" name="x" />
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="-3" name="x" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-center">
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="-2" name="x"/>
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="-1" name="x"/>
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="0" name="x" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-center">
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="1" name="x" />
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="2" name="x" />
+                                    <p:commandLink type="button" class="button-input" actionListener="#{dotsBean.toggle}" value="3" name="x" />
+                                </div>
+                            </div>
+
+                            <p>
+                                <h:outputLabel for="Y_field" value="Выберите Y [-3; 3]:" />
+                            </p>
+                            <div class="row">
+                                <label class="text-label">
+                                    <h:inputText value="#{dotsBean.dotForExecution.y}"
+                                                 id="Y_field"
+                                                 class="text-input"
+                                                 name="y"
+                                                 maxlength="14"
+                                                 placeholder="[-3; 3]"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="special-button">
+                            <h:commandButton id="submit-button"
+                                             disabled="false"
+                                             type="submit"
+                                             action="#{dotsBean.addPoint}"
+                                             value="Отправить на проверку"
+                                             onclick="drawDotsFromTable()">
+                                <f:ajax execute="newEntryForm" render="valuesTable"/>
+                            </h:commandButton>
+                        </div>
+                    </h:form>
+
+                    <div class="special-button">
+                        <h:button outcome="index" value="Вернуться обратно"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-table">
+        <div class="table">
+            <div class="text-center">
+                <h:panelGroup id="valuesTable">
+                    <h:dataTable styleClass="table-check" value="#{dotsBean.dotsList}" var="dot">
+                        <h:column>
+                            <f:facet name="header">X</f:facet>
+                            #{dot.x}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Y</f:facet>
+                            #{dot.y}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">R</f:facet>
+                            #{dot.r}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Текущее время</f:facet>
+                            #{dot.currentTime}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Результат</f:facet>
+                            #{dot.stringResult}
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+            </div>
+        </div>
+    </div>
+
+    <ui:insert name="scripts">
+        <h:outputScript library="js" name="graph.js"/>
+        <h:outputScript library="js" name="script.js"/>
+    </ui:insert>
+
+</h:body>
+
+</html>
