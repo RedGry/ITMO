@@ -1,10 +1,10 @@
 # Веб-программирование
 Всю теорию по данным лабораторным работам можно найти вот здесь: [ссылка](https://github.com/band-of-four/cheatsheets/tree/master/Internet-Applications-Development)
 
-+ [Lab 1](./Lab_1) `HTML + JS + CSS + PHP`
-+ [Lab 2](./Lab_2) `JSP + Servlet`
-+ [Lab 3](./Lab_3) `JSF`
-+ [Lab 4](./Lab_4) `VUE + Spring`
++ [Лабораторная работа 1](./Lab_1) `HTML + JS + CSS + PHP`
++ [Лабораторная работа 2](./Lab_2) `JSP + Servlet`
++ [Лабораторная работа 3](./Lab_3) `JSF`
++ [Лабораторная работа 4](./Lab_4) `VUE + Spring`
 
 ## Микроконтрольные
 <details>
