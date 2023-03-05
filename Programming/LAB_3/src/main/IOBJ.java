@@ -1,0 +1,4 @@
+
+interface IOBJ {
+    void status();
+}
