@@ -1,0 +1,29 @@
+
+\begin{tikzpicture}
+
+\tikzstyle{roundnode} = [circle, draw=black, thick, minimum size=1.5cm]
+\tikzstyle{edge} = [->, thick, auto]
+
+\node[roundnode] (b1) {b1};
+\node[roundnode] (b2) [right =5cm of b1] {b2};
+\node[roundnode] (b3) [right =5cm of b2] {b3};
+\node[roundnode] (b4) [below =5cm of b1] {b4};
+\node[roundnode] (b5) [below =5cm of b2] {b5};
+\node[roundnode] (b6) [below =5cm of b3] {b6};
+
+\draw[edge]  (b1) -- node {$z_3$} (b2);
+\draw[edge]  (b3) -- node [above] {$z_2$} (b2);
+\draw[edge]  (b6) -- node {$z_3$} (b3);
+\draw[edge]  (b2) -- node [near start] {$z_1$} (b6);
+\draw[edge]  (b5) -- node [near start] {$z_3$} (b3);
+\draw[edge]  (b1) -- node {$z_2$} (b5);
+\draw[edge]  (b5) -- node {$z_2$} (b4);
+\draw[edge]  (b4) -- node {$z_1$} (b1);
+
+\path (b1) edge [loop left] node {$z_1$}(b1); 
+\path (b2) edge [loop above] node {$z_2$}(b2); 
+\path (b4) edge [loop left] node {$z_3$}(b4); 
+\path (b3) edge [bend left] node [auto] {$z_1$}(b6); 
+\path (b6) edge [bend left] node [auto] {$z_2$}(b4); 
+
+\end{tikzpicture}

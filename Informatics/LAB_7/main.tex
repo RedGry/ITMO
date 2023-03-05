@@ -1,0 +1,52 @@
+\documentclass[a4paper,9pt]{article} 
+\usepackage{extsizes} % Возможность сделать 9-й шрифт(иначе минимально 12 вроде)
+\usepackage{geometry} % Простой способ задавать поля
+    \geometry{top=15mm}
+    \geometry{bottom=15mm}
+    \geometry{left=15mm}
+    \geometry{right=15mm}
+    \geometry{headsep=1.5mm}
+    \geometry{head=5mm}
+
+%%% Работа с русским языком
+\usepackage{cmap}                   % поиск в PDF
+\usepackage{mathtext}               % русские буквы в формулах
+\usepackage[T2A]{fontenc}           % кодировка
+\usepackage[utf8]{inputenc}         % кодировка исходного текста
+\usepackage[english,russian]{babel} % локализация и переносы
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+\usepackage{graphicx} % работа с картинками
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+
+
+%% Шрифты
+\usepackage{euscript} % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+\usepackage{multicol} % Для создания нескольких колонок
+
+\usepackage{fancyhdr} % Колонтитулы
+    \pagestyle{fancy}
+    \fancyhf{} % очистка текущих значений
+    \renewcommand{\headrulewidth}{0mm}  % Толщина линейки, отчеркивающей верхний колонтитул. renewcommand - переназначение команды
+    
+%% TkiZ
+\usepackage{tikz}  
+\usetikzlibrary{positioning, graphs}
+\documentclass{article}
+
+\begin{document}
+    \input{Title.tex}
+    \input{MyPage.tex}
+    \input{tikz2.tex}
+    \vspace{5cm}
+    \input{tkiz1.tex}
+\end{document}\documentclass[a4paper,9pt]{article} 
