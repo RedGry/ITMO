@@ -1,0 +1,7 @@
+cd driver
+make clean
+make
+cd ..
+rm usermod 2>/dev/null
+gcc -Wall -o usermod user.c 1>/dev/null 2>/dev/null
+echo "The Driver and usermod is ready!!!"
