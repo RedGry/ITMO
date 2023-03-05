@@ -1,0 +1,93 @@
+ORG 0x410
+ADDR: 	WORD $ARRAY
+I: 	WORD 0
+M: 	WORD 5
+BUFF:	WORD 0
+
+START: 	CLA
+	LD ADDR
+	ST I
+	LD M
+	INC
+	ST M
+
+S1:	IN 3
+	AND #0x40
+	BEQ S1
+	LD (I)+
+	ST BUFF
+	SXTB
+	LOOP M
+	JUMP 3
+	CMP #0x0D
+	BEQ STOP
+	OUT 2
+
+KOSTYL: LD M
+	DEC
+	ST M
+
+S2:	IN 3
+	AND #0x40
+	BEQ S2
+	LD BUFF
+	SWAB
+	SXTB
+	CMP #0x0D
+	BEQ STOP
+	OUT 2
+
+NEXT:	LOOP M
+	BR S1
+
+STOP:	HLT
+
+ORG 0x61B
+ARRAY: 	WORD 0xE0D3
+	WORD 0xE7D5
+	WORD 0xD00D
+========================================================================================	Ниже костыль!!!
+ORG 0x410
+ADDR: 	WORD $ARRAY
+I: 	WORD 0
+M: 	WORD 5
+BUFF:	WORD 0
+
+START: 	CLA
+	LD ADDR
+	ST I
+	LD M
+	INC
+	ST M
+
+S1:	IN 3
+	AND #0x40
+	BEQ S1
+	LD (I)+
+	ST BUFF
+	SXTB
+	LOOP M
+	CMP #0x0D
+	BEQ HELP
+	OUT 2
+
+S2:	IN 3
+	AND #0x40
+	BEQ S2
+	LD BUFF
+	SWAB
+	SXTB
+	CMP #0x0D
+	BEQ STOP
+	OUT 2
+
+NEXT:	LOOP M
+	BR S1
+
+STOP:	HLT
+HELP: 	BR S2
+
+ORG 0x61B
+ARRAY: 	WORD 0xE0D3
+	WORD 0xE7D5
+	WORD 0xD00D
