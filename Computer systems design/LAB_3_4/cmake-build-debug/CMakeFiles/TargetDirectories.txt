@@ -1,0 +1,3 @@
+/home/anna/Downloads/lab3_aa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/anna/Downloads/lab3_aa/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/anna/Downloads/lab3_aa/cmake-build-debug/CMakeFiles/lab3_aa.elf.dir
