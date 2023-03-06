@@ -4,7 +4,6 @@ import java.io.*;
 
 public class Serialization implements Serializable{
     public static <T> byte[] SerializeObject(T object) {
-        //System.out.println("Пидор "+ object);
         try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);) {
             objectOutputStream.writeObject(object);
