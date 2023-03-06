@@ -1,0 +1,161 @@
+openapi: 3.0.3
+info:
+  title: Agency service REST endpoints
+  description: Agency service REST endpoints for SOA Lab_1
+  version: 1.0.0
+servers:
+  - url: 'https://localhost:45392/api/v1'
+paths:
+  /agency/find-with-balcony/{cheapest}/{with-balcony}:
+    get:
+      summary: Find the cheapest (or expensive) one with a balcony (or without a balcony)
+      description: Find the cheapest (or expensive) one with a balcony (or without a balcony)
+      parameters:
+        - name: cheapest
+          in: path
+          required: true
+          schema:
+            type: boolean
+            example: true
+        - name: with-balcony
+          in: path
+          required: true
+          schema:
+            type: boolean
+            example: true
+      tags:
+        - Agency
+      responses:
+        '200':
+          description: Returns the cheapest (or most expensive) flat with a balcony (or without a balcony)
+          content:
+            application/json:
+              schema:
+                $ref: './FlatService.yaml#/components/schemas/FlatAllFieldsSchema'
+        '400':
+          description: Invalid parameters supplied
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    format: int32
+                    example: 400
+                  message:
+                    type: string
+                    example: Invalid parameters supplied
+                  time:
+                    type: string
+                    format: date-time
+                    example: 2022-09-19T00:00:09Z
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    format: int32
+                    example: 500
+                  message:
+                    type: string
+                    example: Internal server error
+                  time:
+                    type: string
+                    format: date-time
+                    example: 2022-09-19T00:00:09Z
+        default:
+          description: Returns error code, message and time in case of error
+          content:
+            application/json:
+              schema:
+                $ref: './FlatService.yaml#/components/schemas/Error'
+  /agency/get-most-expensive/{id1}/{id2}/{id3}:
+    get:
+      summary: Calculate the most expensive flat out of three
+      description: Calculate the most expensive flat out of three
+      parameters:
+        - name: id1
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+            exclusiveMinimum: true
+            example: 1
+        - name: id2
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+            exclusiveMinimum: true
+            example: 2
+        - name: id3
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+            exclusiveMinimum: true
+            example: 3
+      tags:
+        - Agency
+      responses:
+        '200':
+          description: Returns the id of the most expensive flat
+          content:
+            application/json:
+              schema:
+                type: integer
+                format: int64
+                example: 1
+        '400':
+          description: Invalid parameters supplied
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    format: int32
+                    example: 400
+                  message:
+                    type: string
+                    example: Invalid parameters supplied
+                  time:
+                    type: string
+                    format: date-time
+                    example: 2022-09-19T00:00:09Z
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    format: int32
+                    example: 500
+                  message:
+                    type: string
+                    example: Internal server error
+                  time:
+                    type: string
+                    format: date-time
+                    example: 2022-09-19T00:00:09Z
+        default:
+          description: Returns error code, message and time in case of error
+          content:
+            application/json:
+              schema:
+                $ref: './FlatService.yaml#/components/schemas/Error'
