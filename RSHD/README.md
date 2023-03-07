@@ -14,7 +14,7 @@
 
 <details>
   <summary>Тест 2</summary>
-  <img align="middle" alt="микрокр-2" src="./tests/img/test2.jpg" /> 
+  <img align="middle" alt="микрокр-2" src="tests/img/test2-n.jpg" /> 
 </details>
 
 <details>
