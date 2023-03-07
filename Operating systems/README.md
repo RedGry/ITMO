@@ -65,3 +65,12 @@
 + [Решатель задание 3](./tests/task3.py)
 + [Разбор заданий - 1](./tests/Рубежка%20OS%20-%20подготовка.pdf)
 + [Разбор заданий - 2](./tests/Для%20своихОС.pdf)
+
+<details>
+  <summary>Варианты рубежа</summary>
+  <img align="middle" alt="рубеж-1" src="./tests/img/rybej-1.jpg" />
+  <img align="middle" alt="рубеж-2" src="./tests/img/rybej-2.jpg" /> 
+  <img align="middle" alt="рубеж-3" src="./tests/img/rybej-3.jpg" /> 
+  <img align="middle" alt="рубеж-4" src="./tests/img/rybej-4.jpg" /> 
+  <img align="middle" alt="рубеж-5" src="./tests/img/rybej-5.jpg" />
+</details>

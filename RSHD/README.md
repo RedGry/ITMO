@@ -22,6 +22,11 @@
   <img align="middle" alt="микрокр-3" src="./tests/img/test3.jpg" /> 
 </details>
 
+<details>
+  <summary>Тест 4</summary>
+  <img align="middle" alt="микрокр-4" src="./tests/img/test4.jpg" /> 
+</details>
+
 ## Рубежная работа
 <details>
   <summary>Рубежка (вариант 1)</summary>
