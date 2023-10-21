@@ -76,12 +76,13 @@
 
 | Ссылка | Описание |
 | --- | --- |
-| https://yank0vy3rdna.github.io/itmo-faq/ | Гайд для первокурсников и абитуриентов |
+| https://yank0vy3rdna.github.io/itmo-faq | Гайд для первокурсников и абитуриентов |
 | https://github.com/Roggired/ITMO | Полезное для первакурсников |
 | https://github.com/EgorMIt/ITMO <br> https://github.com/RomanVassilchenko/ITMOProjects <br> https://github.com/maxbarsukov/itmo <br> <br> https://github.com/Vsev0l0d?tab=repositories <br> https://github.com/testpassword?tab=repositories <br> https://github.com/foryourselfand?tab=repositories <br> <br> https://github.com/band-of-four <br>| Хранилища готовых лаб, ДЗ, теории |
-| https://picloud.pw/about/ | Некоторые ДЗ и лабораторные до 2020 года |
-| https://rosroble.github.io/ | Полезная информация по лабораторным |
-| https://dima.mysoftware.ru/P3110.html | Полезные ссылки |
+| https://github.com/Imtjl | Полезные материалы |
+| https://picloud.pw/about | Некоторые ДЗ и лабораторные до 2020 года |
+| https://rosroble.github.io | Полезная информация по лабораторным |
+| https://205826.github.io | Полезные ссылки |
 | https://telegra.ph/Poleznye-ssylki-dlya-pervokursnikov-VT-08-26 | Другие полезные ссылки |
 
 [Сайт кафедры Вычислительной техники с заданиями к работам](https://se.ifmo.ru)
