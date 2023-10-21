@@ -78,8 +78,7 @@
 | --- | --- |
 | https://yank0vy3rdna.github.io/itmo-faq | Гайд для первокурсников и абитуриентов |
 | https://github.com/Roggired/ITMO | Полезное для первакурсников |
-| https://github.com/EgorMIt/ITMO <br> https://github.com/RomanVassilchenko/ITMOProjects <br> https://github.com/maxbarsukov/itmo <br> <br> https://github.com/Vsev0l0d?tab=repositories <br> https://github.com/testpassword?tab=repositories <br> https://github.com/foryourselfand?tab=repositories <br> <br> https://github.com/band-of-four <br>| Хранилища готовых лаб, ДЗ, теории |
-| https://github.com/Imtjl | Полезные материалы |
+| https://github.com/EgorMIt/ITMO <br> https://github.com/RomanVassilchenko/ITMOProjects <br> https://github.com/maxbarsukov/itmo <br> <br> https://github.com/Vsev0l0d?tab=repositories <br> https://github.com/testpassword?tab=repositories <br> https://github.com/foryourselfand?tab=repositories <br> <br> https://github.com/band-of-four <br> https://github.com/Imtjl | Хранилища готовых лаб, ДЗ, теории |
 | https://picloud.pw/about | Некоторые ДЗ и лабораторные до 2020 года |
 | https://rosroble.github.io | Полезная информация по лабораторным |
 | https://205826.github.io | Полезные ссылки |
