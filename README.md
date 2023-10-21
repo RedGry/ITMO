@@ -2,21 +2,20 @@
 Системное прикладное программное обеспечение в Университете ИТМО.  
 
 Здесь представлены лабораторные, тесты, рубежки, экзамены по всем профильным (и не только) предметам по направлению СППО и кафедры ВТ.  
-Если что-то используете, пожалуйста подписывайтесь и ставьте Star, чтобы не потерять. На любые вопросы могу ответить в [тг](https://t.me/RedGry).
+Если что-то используете, пожалуйста **подписывайтесь :bell:** и **ставьте :star:**, чтобы не потерять. На любые вопросы могу ответить в [тг](https://t.me/RedGry).
 
-Если хотите, что-то добавить в данный репозиторий, можете кидать Pull request. После проверки, если все в порядке, информация будет добавлена.
+Если хотите, что-то добавить в данный репозиторий, можете кидать **Pull request**. После проверки, если все в порядке, информация будет добавлена.
 
 Также можете подписаться на группу в ВК [RedGry](https://vk.com/egoredgry), там можно найти полезные материалы по остальным предметам и онлайн курсам.
 
 ---
 
-## Поддержка
-Если вы хотите поддержать меня, то можете сделать донат.  
-[\*ТЫК*](https://pay.mysbertips.ru/01264891)
+## Оглавление
+1. [Список материалов](#subjects)
+2. [Полезные ссылки](#links)
+3. [Содействие](#contributing)
 
----
-
-## Список материалов
+## Список материалов <a name="subjects" />
 ### Бакалавриат
 <details>
     <summary>1 Курс</summary>
@@ -73,12 +72,32 @@
 
 ---
 
-## Полезные ссылки
-+ [Гайд для первокурсников и абитуриентов](https://yank0vy3rdna.github.io/itmo-faq/)
-+ [Полезно будет первакам](https://github.com/Roggired/ITMO)
-+ [Ещё одно подобное хранилище работ](https://github.com/EgorMIt/ITMO)
-+ [Куча лаб и теории](https://github.com/band-of-four)
-+ [Много лаб от Vsev0l0d](https://github.com/Vsev0l0d?tab=repositories)
-+ [Ещё больше лаб от testpassword](https://github.com/testpassword?tab=repositories)
-+ [Репозиторий с лабами + решалками от foryourselfand](https://github.com/foryourselfand?tab=repositories)
-+ [Сайт кафедры Вычислительной техники с заданиями к работам](https://se.ifmo.ru)
+## Полезные ссылки <a name="links" />
+
+| Ссылка | Описание |
+| --- | --- |
+| https://yank0vy3rdna.github.io/itmo-faq/ | Гайд для первокурсников и абитуриентов |
+| https://github.com/Roggired/ITMO | Полезное для первакурсников |
+| https://github.com/EgorMIt/ITMO <br> https://github.com/RomanVassilchenko/ITMOProjects <br> https://github.com/maxbarsukov/itmo <br> <br> https://github.com/Vsev0l0d?tab=repositories <br> https://github.com/testpassword?tab=repositories <br> https://github.com/foryourselfand?tab=repositories <br> <br> https://github.com/band-of-four <br>| Хранилища готовых лаб, ДЗ, теории |
+| https://picloud.pw/about/ | Некоторые ДЗ и лабораторные до 2020 года |
+| https://rosroble.github.io/ | Полезная информация по лабораторным |
+| https://dima.mysoftware.ru/P3110.html | Полезные ссылки |
+| https://telegra.ph/Poleznye-ssylki-dlya-pervokursnikov-VT-08-26 | Другие полезные ссылки |
+
+[Сайт кафедры Вычислительной техники с заданиями к работам](https://se.ifmo.ru)
+
+---
+
+## Поддержка
+Если вы хотите поддержать меня, то можете сделать донат.  
+[\*ТЫК*](https://pay.mysbertips.ru/01264891)
+
+---
+
+## Содействие: <a name="contributing" />
+
+<a href="https://github.com/redgry/itmo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=redgry/itmo" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
