@@ -20,8 +20,18 @@
 </details>
 
 <details>
+  <summary>Тест 3</summary>
+  <img align="middle" alt="микрокр-3" src="./tests/img/test-3.jpg" /> 
+</details>
+
+<details>
   <summary>Тест 5</summary>
   <img align="middle" alt="микрокр-5" src="./tests/img/test-5.jpg" /> 
+</details>
+
+<details>
+  <summary>Тест 6</summary>
+  <img align="middle" alt="микрокр-6" src="./tests/img/test-6.jpg" /> 
 </details>
 
 ## Рубежные тестирования
