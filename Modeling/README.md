@@ -40,3 +40,13 @@
 	б) 5 с
 	в) 5 шт
 </details>
+
+<details>
+  <summary>Тест 11 (13 нояб 2023)</summary>
+  <img align="middle" alt="микрокр-11" src="./tests/img/test-11.jpg" /> 
+</details>
+
+<details>
+  <summary>Тест 14 (11 дек 2023)</summary>
+  <img align="middle" alt="микрокр-14" src="./tests/img/test-14.jpg" /> 
+</details>
