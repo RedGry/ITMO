@@ -74,3 +74,11 @@
   <img align="middle" alt="рубеж-4" src="./tests/img/rybej-4.jpg" /> 
   <img align="middle" alt="рубеж-5" src="./tests/img/rybej-5.jpg" />
 </details>
+
+## Экзамен
+<details>
+    <summary>Фото билетов</summary>
+    <img align="middle" alt="часть-1" src="./docs/img/exam_part1.jpg" />
+    <img align="middle" alt="часть-2" src="./docs/img/exam_part2.jpg" /> 
+</details>
+
