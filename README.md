@@ -70,6 +70,29 @@
 
 </details>
 
+### Магистратура
+<details>
+    <summary>1 Курс</summary>
+
++ [Иностранный язык](./Foreign%20language)
++ [Критическое мышление в практической деятельности](./Critical%20thinking%20in%20practice)
++ [Системное программное обеспечение](./System%20software%20master)
++ [Инфраструктура разработки ПО (DevOps)](./DevOps)
++ [Методология программной инженерии](./Software%20Engineering%20methodology)
++ [Мультиагентные системы](./Multi-agent%20systems)
++ [Хранилища и базы данных](./Storages%20and%20databases)
+
+</details>
+<details>
+  <summary>2 Курс</summary>
+
++ [Методология программной инженерии](./Software%20Engineering%20methodology)
++ [Тестирование ПО](./TPO)
++ [Технологии веб-сервисов](./Web%20Service%20Technologies)
++ [Диплом](./Diploma%20master%20degree)
+
+</details>
+
 ---
 
 ## Полезные ссылки <a name="links" />
@@ -97,7 +120,7 @@
 ## Содействие: <a name="contributing" />
 
 <a href="https://github.com/redgry/itmo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=redgry/itmo" />
+  <img alt="contributors" src="https://contrib.rocks/image?repo=redgry/itmo" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
