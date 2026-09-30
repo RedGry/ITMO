@@ -117,10 +117,18 @@
 
 ---
 
-## Содействие: <a name="contributing" />
+## Контрибьюторы <a name="contributing" />
 
 <a href="https://github.com/redgry/itmo/graphs/contributors">
   <img alt="contributors" src="https://contrib.rocks/image?repo=redgry/itmo" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
+## История популярности
+
+<a href="https://www.star-history.com/?repos=redgry%2Fitmo&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=redgry/itmo&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=redgry/itmo&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=redgry/itmo&type=date&legend=top-left" />
+ </picture>
+</a>
